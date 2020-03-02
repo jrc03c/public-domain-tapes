@@ -1,0 +1,7 @@
+name: "雨山"
+description: self.ramble()
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title
+url: http://ameyama.com
+include: ["_pages"]
