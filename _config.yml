@@ -1,7 +1,5 @@
-name: "雨山"
-description: self.ramble()
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:title
-url: http://ameyama.com
+name: "public domain tapes"
+description: records of the commons
+permalink: /ep/:title
+url: https://publicdomaintapes.com
 include: ["_pages"]
