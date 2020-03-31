@@ -5,12 +5,21 @@ permalink: /
 
 <p><b>Episodes</b></p>
 
-<ul>
 {% for post in site.posts %}
-  <li>
+<div class="post">
+  <div class="post-thumbnail">
     <a href="{{ post.url }}">
-      {{ post.title }}
+      <img src="{{ post.artCropped }}">
     </a>
-  </li>
+  </div>
+
+  <div class="post-content">
+    <p>
+      <a href="{{ post.url }}"><b>{{ post.title }}</b></a><br>
+      {{ post.date }}
+    </p>
+
+    {{ post.summary }}
+  </div>
+</div>
 {% endfor %}
-</ul>

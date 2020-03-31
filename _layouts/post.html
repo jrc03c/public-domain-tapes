@@ -2,17 +2,23 @@
 layout: default
 ---
 
-<p>
-  <img src="{{ page.artCropped }}">
-</p>
+<div class="post">
+  <div class="post-thumbnail">
+    <img src="{{ page.artCropped }}">
+  </div>
 
-<p>
-  <b>{{ page.title }}</b><br>
-  {{ page.date }}
-</p>
+  <div class="post-content">
+    <p>
+      <b>{{ page.title }}</b><br>
+      {{ page.date | date:"%Y-%m-%d" }}
+    </p>
 
-<p>
-  <a href="{{ page.mp3 }}">[download]</a>
-</p>
+    <p>
+      <a href="{{ page.mp3 }}">[download / play]</a>
+    </p>
 
-{{ content }}
+    <hr class="little">
+
+    {{ content }}
+  </div>
+</div>
