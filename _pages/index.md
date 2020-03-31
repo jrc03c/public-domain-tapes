@@ -16,8 +16,6 @@ permalink: /
       <a href="{{ post.url }}"><b>{{ post.title }}</b></a><br>
       {{ post.date | date:"%Y-%m-%d" }}
     </p>
-
-    {{ post.summary }}
   </div>
 </div>
 {% endfor %}
