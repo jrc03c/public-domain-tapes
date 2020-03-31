@@ -4,4 +4,6 @@ title: About
 permalink: /about
 ---
 
-This is the "about" page!
+Welcome to the Public Domain Tapes podcast! Each episode is an audio collage of music and sound effects that center around a specific theme. The show is made by me, [Josh Castle](https://ameyama.com/), and is released as often as I can make episodes (which will probably be about once a month).
+
+As far as I can tell, all of the works included in these episodes are in the public domain in the United States (at least). I research each episode carefully, make every effort to ensure that there are no copyright restrictions on any of the sources, and provide links to my sources in the show notes for each episode. It is my intention to showcase the work of incredible artists, creators, and thinkers, not to steal or take credit for their work. Therefore, if you have credible reasons to believe that a particular work that I've used is not in the public domain, then please feel free to let me know and I'll try to make it right.
