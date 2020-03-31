@@ -3,8 +3,6 @@ layout: default
 permalink: /
 ---
 
-<p><b>Episodes</b></p>
-
 {% for post in site.posts %}
 <div class="post">
   <div class="post-thumbnail">
