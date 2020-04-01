@@ -47,6 +47,13 @@ hr.little {
 
 img {
   max-width: 100%;
+  margin: 0;
+}
+
+img.logo {
+  width: 256px;
+  max-width: 256px;
+  min-width: 256px;
 }
 
 p {
@@ -76,6 +83,14 @@ a.title {
 
 .post-content *:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  img.logo {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
