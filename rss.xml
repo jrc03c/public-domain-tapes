@@ -19,7 +19,9 @@ layout: none
 		</itunes:owner>
 		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
 		<itunes:image href="{{ site.url }}{{ site.logo }}" />
-		<itunes:category text="{{ site.category }}" />
+		<itunes:category text="{{ site.category }}">
+			<itunes:category text="{{ site.subcategory }}" />
+		</itunes:category>
 
 		{% for post in site.posts %}
 		<item>

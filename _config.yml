@@ -6,7 +6,8 @@ email: "josh@ameyama.com"
 url: https://publicdomaintapes.com
 explicit: "yes"
 logo: /res/img/logo-sq.png
-category: "Performing Arts"
+category: "Arts"
+subcategory: "Performing Arts"
 
 permalink: /ep/:title
 include: ["_pages"]
