@@ -15,6 +15,24 @@ body, html, *, input, button {
   margin: 2em auto 2em auto;
 }
 
+.header {
+  text-align: center;
+}
+
+.navbar {}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 hr {
   margin: 1em 0;
   padding: 2px;
@@ -37,6 +55,11 @@ p {
 
 a {
   text-decoration: none;
+  color: #5baec1;
+}
+
+a.title {
+  color: black;
 }
 
 .post {
