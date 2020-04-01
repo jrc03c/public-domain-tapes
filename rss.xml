@@ -7,19 +7,20 @@ layout: none
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
 		<title>{{ site.title }}</title>
-		<link>{{ site.url }}<link>
+		<link>{{ site.url }}</link>
 		<language>en-us</language>
 		<itunes:subtitle>{{ site.subtitle }}</itunes:subtitle>
 		<itunes:author>{{ site.author }}</itunes:author>
-		<itunes:summary>{{ site.description }}</itunes:summary>
+		<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
 		<description>{{ site.description }}</description>
 		<itunes:owner>
 		    <itunes:name>{{ site.author }}</itunes:name>
 		    <itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
-		<itunes:image href="{{ site.logo }}" />
+		<itunes:image href="{{ site.url }}{{ site.logo }}" />
 		<itunes:category text="{{ site.category }}" />
+		<atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
 
 		{% for post in site.posts %}
 		<item>

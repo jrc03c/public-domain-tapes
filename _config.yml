@@ -4,9 +4,9 @@ description: ""
 author: "Josh Castle"
 email: "josh@ameyama.com"
 url: https://publicdomaintapes.com
-explicit: yes
+explicit: "yes"
 logo: /res/img/logo-sq.png
-category: "Arts"
+category: "Music"
 
 permalink: /ep/:title
 include: ["_pages"]
