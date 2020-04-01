@@ -20,7 +20,6 @@ layout: none
 		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
 		<itunes:image href="{{ site.url }}{{ site.logo }}" />
 		<itunes:category text="{{ site.category }}" />
-		<atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
 
 		{% for post in site.posts %}
 		<item>
