@@ -1,5 +1,12 @@
-name: "public domain tapes"
-description: records of the commons
-permalink: /ep/:title
+title: "Public Domain Tapes"
+subtitle: "Records of the Commons"
+description: ""
+author: "Josh Castle"
+email: "josh@ameyama.com"
 url: https://publicdomaintapes.com
+explicit: yes
+logo: /res/img/logo-sq.png
+category: "Arts"
+
+permalink: /ep/:title
 include: ["_pages"]

@@ -4,20 +4,37 @@ layout: none
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
-		<title>{{ site.name | xml_escape }}</title>
-		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:10 %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.content | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-			</item>
+		<title>{{ site.title }}</title>
+		<link>{{ site.url }}<link>
+		<language>en-us</language>
+		<itunes:subtitle>{{ site.subtitle }}</itunes:subtitle>
+		<itunes:author>{{ site.author }}</itunes:author>
+		<itunes:summary>{{ site.description }}</itunes:summary>
+		<description>{{ site.description }}</description>
+		<itunes:owner>
+		    <itunes:name>{{ site.author }}</itunes:name>
+		    <itunes:email>{{ site.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
+		<itunes:image href="{{ site.logo }}" />
+		<itunes:category text="{{ site.category }}"/></itunes:category>
+
+		{% for post in site.posts %}
+		<item>
+		    <title>{{ post.title }}</title>
+		    <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
+		    <description>{{ post.content | xml_escape }}</description>
+		    <link>{{ site.url }}{{ post.url }}</link>
+		    <enclosure url="{{ site.url }}{{ post.mp3 }}" type="audio/mpeg" length="{{ post.lengthInBytes }}"></enclosure>
+		    <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+		    <itunes:author>{{ site.author }}</itunes:author>
+		    <itunes:duration>{{ post.duration }}</itunes:duration>
+		    <itunes:explicit>{{ site.explicit }}</itunes:explicit>
+		    <guid>{{ site.url }}{{ post.url }}</guid>
+		</item>
 		{% endfor %}
+
 	</channel>
 </rss>
