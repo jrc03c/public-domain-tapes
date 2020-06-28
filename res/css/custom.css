@@ -21,16 +21,17 @@ body, html, *, input, button {
 
 .navbar {}
 
-.navbar ul {
+.navbar ul, .navbar a {
   margin: 0;
   padding: 0;
 }
 
 .navbar li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0.5em;
   padding: 0;
+  width: auto;
 }
 
 hr {
