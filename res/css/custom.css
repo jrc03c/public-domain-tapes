@@ -1,3 +1,7 @@
+:root {
+  --global-padding: 1.5em;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -6,13 +10,14 @@ body, html {
 
 body, html, *, input, button {
   font-family: monospace;
+  line-height: var(--global-padding);
 }
 
 .container {
-  max-width: calc(768px - 4em);
-  min-width: calc(768px - 4em);
-  width: calc(768px - 4em);
-  margin: 2em auto 2em auto;
+  max-width: calc(768px - calc(var(--global-padding) * 2));
+  min-width: calc(768px - calc(var(--global-padding) * 2));
+  width: calc(768px - calc(var(--global-padding) * 2));
+  margin: calc(var(--global-padding) * 2) auto;
 }
 
 .header {
@@ -35,7 +40,7 @@ body, html, *, input, button {
 }
 
 hr {
-  margin: 1em 0;
+  margin: var(--global-padding) 0;
   padding: 2px;
   border: 0;
   background-color: black;
@@ -58,7 +63,7 @@ img.logo {
 }
 
 p {
-  margin: 0 0 1em 0;
+  margin: 0 0 var(--global-padding) 0;
 }
 
 a {
@@ -72,7 +77,7 @@ a.title {
 
 .post {
   background-color: rgb(245, 245, 245);
-  margin-bottom: 1em;
+  margin-bottom: var(--global-padding);
 }
 
 .post-thumbnail {
@@ -80,7 +85,7 @@ a.title {
 }
 
 .post-content {
-  padding: 1em;
+  padding: var(--global-padding);
 }
 
 .post-content *:last-child {
@@ -100,6 +105,6 @@ a.title {
     max-width: calc(100% - 4em);
     min-width: calc(100% - 4em);
     width: calc(100% - 4em);
-    margin: 2em;
+    margin: 4em 2em;
   }
 }
