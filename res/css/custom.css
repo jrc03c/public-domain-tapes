@@ -72,6 +72,7 @@ a.title {
 
 .post {
   background-color: rgb(245, 245, 245);
+  margin-bottom: 1em;
 }
 
 .post-thumbnail {
