@@ -92,6 +92,13 @@ a.title {
   margin-bottom: 0;
 }
 
+blockquote {
+  margin: 0 0 var(--global-padding) 0;
+  padding: var(--global-padding);
+  background-color: rgb(235, 235, 235 );
+  border-left: 4px solid black;
+}
+
 @media (max-width: 320px) {
   img.logo {
     width: 100%;
