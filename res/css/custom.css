@@ -93,10 +93,9 @@ a.title {
 }
 
 blockquote {
-  margin: 0 0 var(--global-padding) 0;
+  margin: 0 calc(-1 * var(--global-padding)) var(--global-padding) calc(-1 * var(--global-padding));
   padding: var(--global-padding);
   background-color: rgb(235, 235, 235 );
-  border-left: 4px solid black;
 }
 
 @media (max-width: 320px) {
