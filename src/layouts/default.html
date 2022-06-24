@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/res/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss.xml">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="/" class="title">
+          <img src="/res/img/logo.png" class="logo">
+          <h1>Public Domain Tapes</h1>
+        </a>
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="/">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="/about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="/subscribe">
+                Subscribe
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.redbubble.com/shop/ap/61601478" target="_blank">
+                Merch
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <hr>
+
+      {{ content }}
+
+      <hr>
+    </div>
+  </body>
+</html>

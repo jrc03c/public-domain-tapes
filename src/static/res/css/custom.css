@@ -1,0 +1,116 @@
+:root {
+  --global-padding: 1.5em;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05em;
+}
+
+body, html, *, input, button {
+  font-family: monospace;
+  line-height: var(--global-padding);
+}
+
+.container {
+  max-width: calc(768px - calc(var(--global-padding) * 2));
+  min-width: calc(768px - calc(var(--global-padding) * 2));
+  width: calc(768px - calc(var(--global-padding) * 2));
+  margin: calc(var(--global-padding) * 2) auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.navbar {}
+
+.navbar ul, .navbar a {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 0.5em;
+  padding: 0;
+  width: auto;
+}
+
+hr {
+  margin: var(--global-padding) 0;
+  padding: 2px;
+  border: 0;
+  background-color: black;
+}
+
+hr.little {
+  background-color: rgb(235, 235, 235);
+  width: 33%;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+img.logo {
+  width: 256px;
+  max-width: 256px;
+  min-width: 256px;
+}
+
+p {
+  margin: 0 0 var(--global-padding) 0;
+}
+
+a {
+  text-decoration: none;
+  color: #5baec1;
+}
+
+a.title {
+  color: black;
+}
+
+.post {
+  background-color: rgb(245, 245, 245);
+  margin-bottom: var(--global-padding);
+}
+
+.post-thumbnail {
+
+}
+
+.post-content {
+  padding: var(--global-padding);
+}
+
+.post-content *:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 calc(-1 * var(--global-padding)) var(--global-padding) calc(-1 * var(--global-padding));
+  padding: var(--global-padding);
+  background-color: rgb(235, 235, 235 );
+}
+
+@media (max-width: 320px) {
+  img.logo {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 4em);
+    min-width: calc(100% - 4em);
+    width: calc(100% - 4em);
+    margin: 4em 2em;
+  }
+}

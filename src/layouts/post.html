@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% for episode in collections.episodes %} {% if episode.url == page.url %}
+
+<div class="post">
+  <div class="post-thumbnail">
+    <img src="{{ episode.data.artCropped }}" />
+  </div>
+
+  <div class="post-content">
+    <p>
+      <b>{{ episode.data.title }}</b>
+      <br />
+      {{ episode.date | prettify-date }}
+    </p>
+
+    <p>
+      <a href="{{ episode.data.mp3 }}">[download / play]</a>
+    </p>
+
+    <hr class="little" />
+
+    {{ content }}
+  </div>
+</div>
+
+{% endif %} {% endfor %}

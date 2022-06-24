@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% for other in collections.pages %} {% if other.url == page.url %}
+
+<div class="post">
+  <div class="post-content">
+    <p>
+      <b>{{ other.data.title }}</b>
+    </p>
+
+    <hr class="little" />
+
+    {{ content }}
+  </div>
+</div>
+
+{% endif %} {% endfor %}
