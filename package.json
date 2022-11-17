@@ -4,13 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "serve": "node build.js --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "@jrc03c/watch": "github:jrc03c/watch",
+    "express": "^4.18.2",
+    "gray-matter": "^4.0.3",
+    "liquidjs": "^9.42.1",
+    "lodash": "^4.17.21",
+    "markdown-it": "^13.0.1"
   },
   "dependencies": {
     "@jrc03c/js-math-tools": "github:jrc03c/js-math-tools"
